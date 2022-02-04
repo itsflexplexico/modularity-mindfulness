@@ -68,6 +68,19 @@ main img {
   margin-bottom: 1.5rem;
 }
 
+.intro {
+  margin: 0 auto 1.5rem;
+  max-width: 30em;
+  padding: 1rem;
+  border-bottom: .2rem solid #e2e2e2;
+  border-top: .2rem solid #e2e2e2;
+  text-align: center;
+}
+
+.intro i {
+  font-size: 2rem;
+}
+
 main {
   margin-bottom: 1.5rem;
   padding: 0 1rem;
@@ -116,3 +129,21 @@ footer {
   text-align: center;
 }
 
+@media only screen and (min-width: 38em) {
+
+  header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  h1 {
+    align-items: flex-start;
+  }
+
+  section {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+}
